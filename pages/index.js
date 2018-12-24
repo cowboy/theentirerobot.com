@@ -92,6 +92,11 @@ const Index = () => (
       a:hover {
         background-color: #fff;
       }
+
+      /* https://github.com/drinchev/monosocialiconsfont/issues/37 */
+      a.symbol, a.symbol:before {
+        -ms-font-feature-settings: "liga" 1;
+      }
     `}</style>
   </div>
 )
