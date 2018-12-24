@@ -7,18 +7,18 @@ const Index = () => (
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
-    <div id="content-bg">
-      <div id="content">
+    <div id='content-bg'>
+      <div id='content'>
         <header>
           <h1>The Entire Robot</h1>
-          <h2>Electronic Funk Jazz Whatever by “Cowboy” Ben Alman</h2>
+          <h2>Electronic Funk Jazz Whatever by <span className='nowrap'>“Cowboy” Ben Alman</span></h2>
         </header>
         <footer>
           <p>
-            <a className='symbol' title='circleyoutube' href="https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q">
+            <a className='symbol' title='circleyoutube' href='https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q'>
               Videos
             </a>
-            <a className='symbol' title='circlefacebook' href="https://www.facebook.com/TheEntireRobot/">
+            <a className='symbol' title='circlefacebook' href='https://www.facebook.com/TheEntireRobot/'>
               Updates
             </a>
           </p>
@@ -38,6 +38,10 @@ const Index = () => (
         background-repeat: no-repeat;
         background-position: center;
         font-family: 'Mono Social Icons Font';
+      }
+
+      .nowrap {
+        white-space: nowrap;
       }
     `}</style>
     <style jsx>{`
@@ -95,7 +99,7 @@ const Index = () => (
 
       /* https://github.com/drinchev/monosocialiconsfont/issues/37 */
       a.symbol, a.symbol:before {
-        -ms-font-feature-settings: "liga" 1;
+        -ms-font-feature-settings: 'liga' 1;
       }
     `}</style>
   </div>
