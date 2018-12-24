@@ -67,16 +67,19 @@ const Index = () => (
         margin: 0;
         margin-left: -3px;
         position: relative;
+        line-height: 1.2em;
       }
 
       h2 {
         font-size: 0.9em;
         margin: 0.7em 0 5em;
+        line-height: 1.2em;
       }
 
       p {
         font-size: 1.4em;
         margin: 0;
+        line-height: 1.2em;
       }
 
       a {
