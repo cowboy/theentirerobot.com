@@ -19,6 +19,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "hsluv": "^0.0.3"
   }
 }

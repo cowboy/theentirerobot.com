@@ -3,7 +3,17 @@ import classnames from 'classnames'
 
 import styles from './index.css'
 
-const hue = Math.random() * 360
+// import { hsluvToHex } from 'hsluv'
+// const colors = Array.from({length: 20}).map((_, i) => hsluvToHex([360 / 10 * i, 100, 75]))
+// console.log(colors)
+
+const colors = [
+  "#ff9cb1", "#ffa360", "#d4b800", "#92ca00", "#00d384",
+  "#00cfc0", "#00caea", "#94b9ff", "#d9a3ff", "#ff95e1",
+  "#ff9cb1", "#ffa360", "#d4b800", "#92ca00", "#00d384",
+  "#00cfc0", "#00caea", "#94b9ff", "#d9a3ff", "#ff95e1"
+]
+const color = colors[Math.floor(Math.random() * colors.length)]
 
 const Index = () => (
   <>
@@ -13,7 +23,7 @@ const Index = () => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <style>{`
         :root {
-          --primaryColor: hsl(${hue}, 90%, 60%) !important;
+          --primaryColor: ${color} !important;
         }
       `}</style>
     </Head>
