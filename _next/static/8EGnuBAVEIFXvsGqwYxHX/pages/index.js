@@ -1,0 +1,12 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{108:function(e,t,a){e.exports=a(107)},206:function(e,t,a){__NEXT_REGISTER_PAGE("/",function(){return e.exports=a(207),{page:e.exports.default}})},207:function(e,t,a){"use strict";a.r(t);var n=a(0),o=a.n(n),r=a(108),l=a.n(r),c=a(76),i=a.n(c),m=a(11),s=a.n(m),u=360*Math.random();t.default=function(){return o.a.createElement(o.a.Fragment,null,o.a.createElement(l.a,null,o.a.createElement("title",null,"The Entire Robot"),o.a.createElement("meta",{charSet:"utf-8"}),o.a.createElement("meta",{name:"viewport",content:"initial-scale=1.0, width=device-width"}),o.a.createElement("style",null,"\n        :root {\n          --primaryColor: hsl(".concat(u,", 90%, 60%) !important;\n        }\n      "))),o.a.createElement("div",{className:s.a.content},o.a.createElement("header",{className:s.a.header},o.a.createElement("h1",{className:s.a.title},"The Entire Robot"),o.a.createElement("h2",{className:s.a.subtitle},"Electronic Funk Jazz Whatever by ",o.a.createElement("span",{className:"nowrap"},"“Cowboy” Ben Alman"))),o.a.createElement("footer",{className:s.a.footer},o.a.createElement("ul",{className:s.a.footerList},o.a.createElement("li",{className:s.a.footerItem},o.a.createElement("a",{className:i()("symbol",s.a.link),title:"circleyoutube",href:"https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q"},"Videos")),o.a.createElement("li",{className:s.a.footerItem},o.a.createElement("a",{className:i()("symbol",s.a.link),title:"circlefacebook",href:"https://www.facebook.com/TheEntireRobot/"},"Updates"))))))}},76:function(e,t,a){var n;
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+!function(){"use strict";var a={}.hasOwnProperty;function o(){for(var e=[],t=0;t<arguments.length;t++){var n=arguments[t];if(n){var r=typeof n;if("string"===r||"number"===r)e.push(n);else if(Array.isArray(n)&&n.length){var l=o.apply(null,n);l&&e.push(l)}else if("object"===r)for(var c in n)a.call(n,c)&&n[c]&&e.push(c)}}return e.join(" ")}void 0!==e&&e.exports?(o.default=o,e.exports=o):void 0===(n=function(){return o}.apply(t,[]))||(e.exports=n)}()}},[[206,1,0,6]]]);

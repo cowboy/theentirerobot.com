@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
+webpackHotUpdate("styles",{
 
 /***/ "./pages/index.css":
 /*!*************************!*\
@@ -38,5 +38,5 @@ module.exports = {"content":"content___3tKqh","header":"header___3WU5y","title":
 
 /***/ })
 
-}]);
-//# sourceMappingURL=styles.js.map
+})
+//# sourceMappingURL=styles.0281a8812f4dbbeec0cb.hot-update.js.map
