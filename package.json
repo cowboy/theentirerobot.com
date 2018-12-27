@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export && shopt -s dotglob && cp -R out-files/ out/",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -td out",
     "build-deploy": "yarn build && yarn export && yarn deploy"
   },
   "dependencies": {
