@@ -7,11 +7,14 @@
     "build": "next build",
     "start": "next start",
     "export": "next export && shopt -s dotglob && cp -R out-files/ out/",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -td out",
     "build-deploy": "yarn build && yarn export && yarn deploy"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "classnames": "^2.2.6",
     "next": "^7.0.2",
+    "postcss-css-variables": "^0.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
