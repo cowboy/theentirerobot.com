@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{13:function(e,t,_){e.exports={content:"content___3tKqh",header:"header___3WU5y",title:"title___JXFef",subtitle:"subtitle___1pe-O",footerText:"footerText____KVsm",link:"link___1-pnY"}}}]);
