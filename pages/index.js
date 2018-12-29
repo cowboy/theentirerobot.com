@@ -29,7 +29,7 @@ const Index = () => (
     </Head>
     <div className={styles.content}>
       <header className={styles.header}>
-        <h1 className={styles.title}>The Entire Robot</h1>
+        <h1 className={styles.title} data-title='The Entire Robot'>The Entire Robot</h1>
         <h2 className={styles.subtitle}>
           Electronic Funk Jazz Whatever by <span className='nowrap'>“Cowboy” Ben Alman</span>
         </h2>
