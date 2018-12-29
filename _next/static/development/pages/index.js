@@ -6034,6 +6034,7 @@ var Index = function Index() {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.title,
+    "data-title": "The Entire Robot",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
