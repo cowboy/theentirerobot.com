@@ -5973,7 +5973,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./pages/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/cowboy/Dropbox/Code/theentirerobot.com/pages/index.js";
+var _jsxFileName = "/Users/cowboy/Dropbox/The Entire Robot/theentirerobot.com/pages/index.js";
 
 
 
@@ -6084,7 +6084,7 @@ var Index = function Index() {
       lineNumber: 40
     },
     __self: this
-  }, "Videos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }, "Subscribe")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.footerItem,
     __source: {
       fileName: _jsxFileName,
@@ -6100,7 +6100,23 @@ var Index = function Index() {
       lineNumber: 48
     },
     __self: this
-  }, "Updates"))))));
+  }, "Like")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.footerItem,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()('symbol', _index_css__WEBPACK_IMPORTED_MODULE_3___default.a.link),
+    title: "circletwitter",
+    href: "https://twitter.com/TheEntireRobot",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "Follow"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
