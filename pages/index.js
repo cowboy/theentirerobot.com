@@ -41,7 +41,7 @@ const Index = () => (
               title='circleyoutube'
               href='https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q'
             >
-              Videos
+              Subscribe
             </a>
           </li>
           <li className={styles.footerItem}>
@@ -49,7 +49,15 @@ const Index = () => (
               title='circlefacebook'
               href='https://www.facebook.com/TheEntireRobot/'
             >
-              Updates
+              Like
+            </a>
+          </li>
+          <li className={styles.footerItem}>
+            <a className={classnames('symbol', styles.link)}
+              title='circletwitter'
+              href='https://twitter.com/TheEntireRobot'
+            >
+              Follow
             </a>
           </li>
         </ul>
