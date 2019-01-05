@@ -56,10 +56,10 @@ a.symbol, a.symbol:before {
   position: relative;
   font-family: 'Bungee Outline';
   font-weight: 400;
-  font-size: 4em;
+  font-size: 5em;
   margin: 0;
   /* Font quirkiness workarounds */
-  margin-left: -3px;
+  margin-left: -1px;
   margin-top: -0.2em;
 }
 .title___JXFef:before,
@@ -85,7 +85,7 @@ a.symbol, a.symbol:before {
 
 .subtitle___1pe-O {
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0.7em 0 5em;
 }
 
@@ -93,21 +93,34 @@ a.symbol, a.symbol:before {
   font-size: 1.4em;
   list-style-type: none;
   margin: 0;
+  margin-bottom: -0.5em;
   padding: 0;
 }
 
 .footerItem___2JMq1 {
   display: inline-block;
   margin-right: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 a.link___1-pnY {
   color: var(--linkTextColor);
   background-color: var(--primaryColor);
+  border-radius: 5px;
+}
+
+a.link___1-pnY:before {
+  line-height: 1em;
 }
 
 a.link___1-pnY:hover {
   background-color: var(--linkHoverColor);
+}
+
+@media only screen and (max-width : 375px) {
+  .content___3tKqh {
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=styles.chunk.css.map*/
