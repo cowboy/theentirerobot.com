@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"content":"content___3tKqh","header":"header___3WU5y","title":"title___JXFef","subtitle":"subtitle___1pe-O","footerText":"footerText____KVsm","footerList":"footerList___KP5D9","footerItem":"footerItem___2JMq1","link":"link___1-pnY"};;
+module.exports = {"content":"content___3tKqh","header":"header___3WU5y","title":"title___JXFef","subtitle":"subtitle___1pe-O"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -30,7 +30,7 @@ module.exports = {"content":"content___3tKqh","header":"header___3WU5y","title":
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1546659612274");
+            injectCss(link, link.href.split("?")[0] + "?unix=1592599190534");
           });
       }
     }
