@@ -40,30 +40,35 @@ const Index = () => (
           <li>
             <a href='https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q'>
               <i className='fab fa-youtube' />
+              {' '}
               YouTube
             </a>
           </li>
           <li>
             <a href='https://www.twitch.tv/theentirerobot'>
               <i className='fab fa-twitch' />
+              {' '}
               Twitch
             </a>
           </li>
           <li>
             <a href='https://www.facebook.com/TheEntireRobot/'>
               <i className='fab fa-facebook' />
+              {' '}
               Facebook
             </a>
           </li>
           <li>
             <a href='https://twitter.com/TheEntireRobot'>
               <i className='fab fa-twitter' />
+              {' '}
               Twitter
             </a>
           </li>
           <li>
             <a href='https://www.instagram.com/theentirerobot/'>
               <i className='fab fa-instagram' />
+              {' '}
               Instagram
             </a>
           </li>

@@ -106,10 +106,6 @@ footer a:hover {
   background-color: var(--linkHoverColor);
 }
 
-footer a i {
-  margin-right: 0.4em;
-}
-
 @media only screen and (max-width : 375px) {
   .content {
     font-size: 0.8em;
