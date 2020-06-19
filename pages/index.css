@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Outline');
-@import url('/static/monosocialiconsfont/monosocialiconsfont.css');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@400;700&display=swap');
 
 :root {
   --primaryColor: #00cfc0;
@@ -20,16 +20,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Mono Social Icons Font';
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 
 :global(#__next) {
   width: 100%;
-}
-
-/* https://github.com/drinchev/monosocialiconsfont/issues/37 */
-:global(a.symbol), :global(a.symbol:before) {
-  -ms-font-feature-settings: 'liga' 1;
 }
 
 :global(.nowrap) {
@@ -37,7 +34,7 @@
 }
 
 .content {
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
   padding: var(--pagePadding);
   padding-top: var(--gradientTopPadding);
   margin-top: calc(var(--pagePadding) - var(--gradientTopPadding));
@@ -47,75 +44,70 @@
   color: var(--primaryColor);
 }
 
-.title,
-.subtitle,
-.footerText {
-  line-height: 1.2em;
-}
-
 .title {
   position: relative;
   font-family: 'Bungee Outline';
   font-weight: 400;
-  font-size: 5em;
+  font-size: min(8em, 20vw);
+  line-height: 0.9em;
+  width: 4.1em;
   margin: 0;
   /* Font quirkiness workarounds */
   margin-left: -1px;
   margin-top: -0.2em;
 }
-.title:before,
-.title:after {
+
+.title:before {
   font-family: 'Bungee';
   position: absolute;
   content: attr(data-title);
-}
-
-.title:before {
-  z-index: -1;
   top: 0;
   left: 0;
-  color: rgba(0,0,0,0.5);
+  z-index: -1;
+  color: rgba(0,0,0,0.6);
 }
 
-.title:after {
-  z-index: -2;
-  top: 0.05em;
-  left: 0.05em;
-  color: rgba(0,0,0,0.0);
+.subtitle,
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 .subtitle {
-  font-weight: 400;
   font-size: 1em;
-  margin: 0.7em 0 5em;
+  font-weight: 400;
+  margin: 0.7em 0 3em;
 }
 
-.footerList {
-  font-size: 1.4em;
+footer ul {
   list-style-type: none;
   margin: 0;
   margin-bottom: -0.5em;
   padding: 0;
 }
 
-.footerItem {
+footer li {
+  white-space: nowrap;
   display: inline-block;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
 }
 
-a.link {
+footer a {
   color: var(--linkTextColor);
   background-color: var(--primaryColor);
   border-radius: 5px;
+  padding: 5px 8px;
+  text-decoration: none;
+  line-height: 1.7em;
 }
 
-a.link:before {
-  line-height: 1em;
-}
-
-a.link:hover {
+footer a:hover {
   background-color: var(--linkHoverColor);
+}
+
+footer a i {
+  margin-right: 0.4em;
 }
 
 @media only screen and (max-width : 375px) {
