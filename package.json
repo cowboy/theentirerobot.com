@@ -6,7 +6,7 @@
     "dev": "next -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "export": "next export && shopt -s dotglob && cp -R out-files/ out/",
+    "export": "next export && shopt -s dotglob && cp -R out-files/* out/",
     "deploy": "gh-pages -td out",
     "build-deploy": "yarn build && yarn export && yarn deploy"
   },
