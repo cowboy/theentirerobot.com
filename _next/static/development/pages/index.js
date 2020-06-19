@@ -6038,87 +6038,87 @@ var Index = function Index() {
       lineNumber: 42
     },
     __self: this
-  }), "YouTube")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }), ' ', "YouTube")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.twitch.tv/theentirerobot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-twitch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
-  }), "Twitch")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }), ' ', "Twitch")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.facebook.com/TheEntireRobot/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 56
     },
     __self: this
-  }), "Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }), ' ', "Facebook")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://twitter.com/TheEntireRobot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 63
     },
     __self: this
-  }), "Twitter")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+  }), ' ', "Twitter")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.instagram.com/theentirerobot/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 69
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-instagram",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 70
     },
     __self: this
-  }), "Instagram"))))));
+  }), ' ', "Instagram"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
