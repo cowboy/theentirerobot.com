@@ -38,7 +38,7 @@ const Index = () => (
       <footer className={styles.footer}>
         <ul>
           <li>
-            <a href='https://www.youtube.com/channel/UCFaB1HnL2RgFgD6v9MSgv2Q'>
+            <a href='https://www.youtube.com/c/TheEntireRobot'>
               <i className='fab fa-youtube' />
               {' '}
               YouTube
