@@ -24,8 +24,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - run: echo $PATH
       - run: yarn install --frozen-lockfile
+      - run: echo $PATH
       - run: yarn yarn build
+      - run: echo $PATH
       - run: yarn export
 
       - name: Deploy
