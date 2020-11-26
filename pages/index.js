@@ -17,7 +17,7 @@ const color = colors[Math.floor(Math.random() * colors.length)]
 const Index = () => (
   <>
     <Head>
-      <title>The Entire Robot :: Electronic Funk Jazz Whatever</title>
+      <title>The Entire Robot :: Electronic Jazz Funk Whatever</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <link rel="icon" href="/static/favicon.png"></link>
@@ -32,7 +32,7 @@ const Index = () => (
       <header className={styles.header}>
         <h1 className={styles.title} data-title='The Entire Robot'>The Entire Robot</h1>
         <h2 className={styles.subtitle}>
-          Electronic Funk Jazz Whatever by <span className='nowrap'>“Cowboy” Ben Alman</span>
+          Electronic Jazz Funk Whatever by <span className='nowrap'>“Cowboy” Ben Alman</span>
         </h2>
       </header>
       <footer className={styles.footer}>
