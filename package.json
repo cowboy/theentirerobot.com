@@ -13,10 +13,10 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "classnames": "^2.2.6",
-    "next": "^7.0.2",
-    "postcss-css-variables": "^0.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "next": "^10.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-twitch-embed": "^2.1.0"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
