@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { TwitchPlayer } from 'react-twitch-embed'
 import cx from 'classnames'
 
@@ -25,15 +24,7 @@ const LogoIcon = ({ name, className, children }) => (
   </span>
 )
 
-const Index = () => {
-  const {
-    asPath,
-    query: { channel = 'theentirerobot' },
-  } = useRouter()
-
-  // Don't render twitch before Next.js populates the query object
-  const renderTwitch = asPath !== '/[channel]'
-
+const Index = ({ channel = 'theentirerobot' }) => {
   const [isOnline, setOnlineState] = React.useState(false)
   const setOnline = () => setOnlineState(true)
   const setOffline = () => setOnlineState(false)
@@ -75,7 +66,7 @@ const Index = () => {
           <div className={styles.twitch}>
             <div className={styles.twitchInner}>
               <div className={styles.twitchInner2}>
-                {renderTwitch && (
+                {channel && (
                   <TwitchPlayer
                     channel={channel}
                     width="100%"
