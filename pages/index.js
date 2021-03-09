@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { TwitchPlayer } from 'react-twitch-embed'
 import cx from 'classnames'
 
@@ -25,7 +26,9 @@ const LogoIcon = ({ name, className, children }) => (
 )
 
 const Index = () => {
-  let channel = 'theentirerobot'
+  const {
+    query: { channel = 'theentirerobot' },
+  } = useRouter()
   const [isOnline, setOnlineState] = React.useState(false)
   const setOnline = () => setOnlineState(true)
   const setOffline = () => setOnlineState(false)
