@@ -7,6 +7,7 @@
 html {
   --primaryColor: #00cfc0;
   --primaryColorOpaque: #00cfc0aa;
+  --hypnoAnimation: url('/static/hypno-2.gif');
 }
 
 html,

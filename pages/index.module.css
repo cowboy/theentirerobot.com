@@ -7,11 +7,6 @@
   height: 100%;
 }
 
-/* .content {
-  background: #00000044;
-  flex-grow: 1;
-} */
-
 .headerInner {
   padding: 0.8em 0;
 }
@@ -20,6 +15,14 @@
 .footer {
   background: #00000099;
   z-index: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000033;
+  flex-grow: 1;
 }
 
 .header::after,
@@ -47,11 +50,11 @@
   position: relative;
   font-family: 'Bungee';
   font-weight: 400;
-  font-size: 9.6vw;
+  font-size: min(9.6vw, 8em);
   line-height: 0.8em;
   text-align: center;
   margin: 0;
-  background: url('https://media.giphy.com/media/4H3Ii5eLChYul9p7NL/giphy.gif');
+  background: var(--hypnoAnimation);
   background-size: cover;
   background-position: center;
   -webkit-background-clip: text;
@@ -76,19 +79,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('https://media.giphy.com/media/4H3Ii5eLChYul9p7NL/giphy.gif');
+  background: var(--hypnoAnimation);
   background-size: cover;
   background-position: center;
   background-clip: content-box;
   /* background: #f0f; */
   -webkit-background-clip: text;
   background-clip: text;
+  max-width: 83em;
+  margin: 0 auto;
 }
 
 .footerLeft {
   flex: 1;
-  margin-left: 1em;
   position: relative;
+  font-size: min(1.5vw, 1.25em);
+  overflow: hidden;
+  height: 7em;
+  padding-left: 1em;
+  /* border: 1px solid #f00; */
 }
 
 .footerLeft h2 {
@@ -98,7 +107,6 @@
 .onlineFooter,
 .offlineFooter {
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
   display: flex;
@@ -107,7 +115,7 @@
 
 .isOffline .onlineFooter,
 .isOnline .offlineFooter {
-  left: -43vw;
+  bottom: -13em;
 }
 
 .onlineFooter {
@@ -119,14 +127,13 @@
 }
 
 .offlineSubtitle {
-  font-size: 2.7vw;
+  font-size: 1.75em;
   width: 16em;
-  margin: 0 0 0.2em;
 }
 
 .onlineSubtitle {
-  font-size: 1.3vw;
-  margin: 0.8em 0 0;
+  margin: 0.5em 0 0;
+  font-size: 0.95em;
 }
 
 .liveTwitchLink {
@@ -136,9 +143,9 @@
   border: 2px solid #fff;
   border-radius: 4px;
   padding: 0.2em 0.5em;
-  font-size: 1.5vw;
   width: 27em;
   text-decoration: none;
+  font-size: 1em;
 }
 
 .liveTwitchLink:hover {
@@ -148,7 +155,7 @@
 /* SOCIAL ICONS */
 
 .socialIcons {
-  font-size: 8vw;
+  font-size: min(8vw, 6.5em);
   padding-top: 0.13em;
   padding-bottom: 0.2em;
 }
@@ -252,14 +259,39 @@
 /* CONTENT */
 
 .twitch {
-  width: 100%;
-  height: 100%;
-  padding: 4em;
-  background: #000000ee;
+  width: min(90vw, 110vh);
+  /* border: 1px solid #f00; */
 }
 
-/* @media only screen and (max-width: 375px) {
-  .content {
-    font-size: 0.8em;
+@media only screen and (max-height: 1000px) {
+  .twitch {
+    width: min(90vw, 100vh);
   }
-} */
+}
+
+@media only screen and (max-height: 700px) {
+  .twitch {
+    width: min(90vw, 90vh);
+  }
+}
+
+/* https://usefulangle.com/post/142/css-video-aspect-ratio */
+.twitchInner {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  /* border: 1px solid #00f; */
+  position: relative;
+  border: 3px solid #000;
+  box-shadow: 0 0 30px 10px #00000077;
+  background: #00000077;
+}
+
+.twitchInner2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+}

@@ -9,29 +9,10 @@ import styles from './index.module.css'
 // const colors = Array.from({length: 20}).map((_, i) => hsluvToHex([360 / 10 * i, 100, 75]))
 // console.log(colors)
 
-const colors = [
-  '#ff9cb1',
-  '#ffa360',
-  '#d4b800',
-  '#92ca00',
-  '#00d384',
-  '#00cfc0',
-  '#00caea',
-  '#94b9ff',
-  '#d9a3ff',
-  '#ff95e1',
-  '#ff9cb1',
-  '#ffa360',
-  '#d4b800',
-  '#92ca00',
-  '#00d384',
-  '#00cfc0',
-  '#00caea',
-  '#94b9ff',
-  '#d9a3ff',
-  '#ff95e1',
-]
-const color = colors[Math.floor(Math.random() * colors.length)]
+const hypnoGifCount = 4
+const hypnoGif = `/static/hypno-${
+  Math.floor(Math.random() * Math.floor(hypnoGifCount)) + 1
+}.gif`
 
 const LogoIcon = ({ name, className, children }) => (
   <span className={cx(styles.logoIcon, className)}>
@@ -59,8 +40,7 @@ const Index = () => {
         <link rel="icon" href="/static/favicon.png"></link>
         <style>{`
         :root {
-          --primaryColor: ${color} !important;
-          --primaryColorOpaque: ${color}aa !important;
+          --hypnoAnimation: url(${hypnoGif});
         }
       `}</style>
       </Head>
@@ -81,18 +61,23 @@ const Index = () => {
             </h1>
           </div>
         </header>
-        <section className={styles.twitch}>
-          <TwitchPlayer
-            channel={channel}
-            width="100%"
-            height="100%"
-            onOnline={setOnline}
-            onOffline={setOffline}
-            onReady={p => {
-              player.current = p
-            }}
-            parent={['localhost']}
-          />
+        <section className={styles.content}>
+          <div className={styles.twitch}>
+            <div className={styles.twitchInner}>
+              <div className={styles.twitchInner2}>
+                <TwitchPlayer
+                  channel={channel}
+                  width="100%"
+                  height="100%"
+                  onOnline={setOnline}
+                  onOffline={setOffline}
+                  onReady={p => {
+                    player.current = p
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </section>
         <footer className={styles.footer}>
           <div className={styles.footerInner}>
