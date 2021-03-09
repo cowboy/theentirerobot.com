@@ -27,13 +27,20 @@ const LogoIcon = ({ name, className, children }) => (
 
 const Index = () => {
   const {
+    asPath,
     query: { channel = 'theentirerobot' },
   } = useRouter()
+
+  // Don't render twitch before Next.js populates the query object
+  const renderTwitch = asPath !== '/[channel]'
+
   const [isOnline, setOnlineState] = React.useState(false)
   const setOnline = () => setOnlineState(true)
   const setOffline = () => setOnlineState(false)
+
   const player = React.createRef()
   const stopPlaying = () => player.current?.pause()
+
   return (
     <>
       <Head>
@@ -68,16 +75,18 @@ const Index = () => {
           <div className={styles.twitch}>
             <div className={styles.twitchInner}>
               <div className={styles.twitchInner2}>
-                <TwitchPlayer
-                  channel={channel}
-                  width="100%"
-                  height="100%"
-                  onOnline={setOnline}
-                  onOffline={setOffline}
-                  onReady={p => {
-                    player.current = p
-                  }}
-                />
+                {renderTwitch && (
+                  <TwitchPlayer
+                    channel={channel}
+                    width="100%"
+                    height="100%"
+                    onOnline={setOnline}
+                    onOffline={setOffline}
+                    onReady={p => {
+                      player.current = p
+                    }}
+                  />
+                )}
               </div>
             </div>
           </div>
