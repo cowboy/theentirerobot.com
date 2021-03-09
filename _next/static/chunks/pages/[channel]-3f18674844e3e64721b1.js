@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[5],{"ZV+5":function(n,_,w){"use strict";w.r(_);var i=w("RNiq");_.default=i.default},p9LO:function(n,_,w){(window.__NEXT_P=window.__NEXT_P||[]).push(["/[channel]",function(){return w("ZV+5")}])}},[["p9LO",0,2,1,3]]]);
