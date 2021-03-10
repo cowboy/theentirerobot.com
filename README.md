@@ -8,11 +8,14 @@ https://theentirerobot.com
 
 ### Prerequisites
 
-* [volta](https://volta.sh/)
-* Ensure bash is the default shell for yarn commands with `yarn config set script-shell /bin/bash`
+- [volta](https://volta.sh/)
+- Ensure bash is the default shell for yarn commands with `yarn config set script-shell /bin/bash`
 
 ### Commands
 
-* `yarn` - install dependencies
-* `yarn dev` - start dev server
-* `yarn build-deploy` - build + publish to gh-pages
+- `yarn` - install dependencies
+- `yarn dev` - start dev server
+
+### Deploying
+
+- Commits to `main` will be automatically deployed
